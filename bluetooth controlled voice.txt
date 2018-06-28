@@ -1,0 +1,30 @@
+if (bluetooth.available())
+   {
+    value = bluetooth.readString();
+
+    if (value == "all LED turn on"){
+    digitalWrite(2, HIGH);
+    digitalWrite(3, HIGH); 
+      }
+
+    if (value == "all LED turn off"){
+      digitalWrite(2, LOW);
+      digitalWrite(3, LOW);      
+      }
+
+    if (value == "turn on Red LED"){
+    digitalWrite(2, HIGH);
+      }
+
+    if (value == "turn on green LED"){
+      digitalWrite(3, HIGH);      
+      }
+     
+    if (value == "turn off red LED"){
+    digitalWrite(2, LOW);
+      }
+
+    if (value == "turn off green LED"){
+      digitalWrite(3, LOW);      
+      }
+ }
